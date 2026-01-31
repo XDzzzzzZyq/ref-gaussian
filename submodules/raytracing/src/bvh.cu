@@ -26,6 +26,7 @@
 #include <stack>
 #include <iostream>
 #include <cstdio>
+#include <cassert>
 
 using namespace Eigen;
 using namespace raytracing;

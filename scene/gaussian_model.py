@@ -292,6 +292,8 @@ class GaussianModel:
         self.spatial_lr_scale = spatial_lr_scale
         fused_point_cloud = torch.tensor(np.asarray(pcd.points)).float().cuda()
         fused_color = RGB2SH(torch.tensor(np.asarray(pcd.colors)).float().cuda())
+
+        # (N, 3, D)
         sh_features = torch.zeros((fused_color.shape[0], 3, (self.max_sh_degree + 1) ** 2)).float().cuda()
         sh_features[:, :3, 0 ] = fused_color
         sh_features[:, 3:, 1:] = 0.0
@@ -451,6 +453,25 @@ class GaussianModel:
         elements = np.empty(xyz.shape[0], dtype=dtype_full)
 
         attributes = np.concatenate((xyz, normals1, normals2, f_dc, f_rest, ind_dc, ind_rest, ind_asg, opacities, refl_strength, metalness, roughness, ori_color, diffuse_color, scale, rotation), axis=1)
+
+        print("xyz:", xyz.shape)
+        print("normals1:", normals1.shape)
+        print("normals2:", normals2.shape)
+        print("f_dc:", f_dc.shape)
+        print("f_rest:", f_rest.shape)
+        print("ind_dc:", ind_dc.shape)
+        print("ind_rest:", ind_rest.shape)
+        print("ind_asg:", ind_asg.shape)
+        print("opacities:", opacities.shape)
+        print("refl_strength:", refl_strength.shape)
+        print("metalness:", metalness.shape)
+        print("roughness:", roughness.shape)
+        print("ori_color:", ori_color.shape)
+        print("diffuse_color:", diffuse_color.shape)
+        print("scale:", scale.shape)
+        print("rotation:", rotation.shape)
+
+        print("attributes:", attributes.shape)
 
         elements[:] = list(map(tuple, attributes))
         el = PlyElement.describe(elements, 'vertex')

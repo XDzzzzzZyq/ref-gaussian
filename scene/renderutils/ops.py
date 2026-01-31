@@ -29,11 +29,7 @@ def _get_plugin():
     # Make sure we can find the necessary compiler and libary binaries.
     if os.name == 'nt':
         def find_cl_path():
-            import glob
-            for edition in ['Enterprise', 'Professional', 'BuildTools', 'Community']:
-                paths = sorted(glob.glob(r"C:\Program Files (x86)\Microsoft Visual Studio\*\%s\VC\Tools\MSVC\*\bin\Hostx64\x64" % edition), reverse=True)
-                if paths:
-                    return paths[0]
+            return r"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\*\bin\Hostx64\x64"
 
         # If cl.exe is not on path, try to find it.
         if os.system("where cl.exe >nul 2>nul") != 0:

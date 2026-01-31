@@ -339,9 +339,31 @@ def render_surfel(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.T
     normal_map = normal_map / render_alpha.permute(1,2,0).clamp_min(1e-6)
     
     if opt.indirect:
-        specular, extra_dict = get_specular_color_surfel(pc.get_envmap, albedo.permute(1,2,0), viewpoint_camera.HWK, viewpoint_camera.R, viewpoint_camera.T, normal_map, render_alpha.permute(1,2,0), refl_strength=refl_strength.permute(1,2,0), roughness=roughness.permute(1,2,0), pc=pc, surf_depth=surf_depth, indirect_light=indirect_light.permute(1,2,0))
+        specular, extra_dict = get_specular_color_surfel(
+            pc.get_envmap,
+            albedo.permute(1,2,0),
+            viewpoint_camera.HWK,
+            viewpoint_camera.R,
+            viewpoint_camera.T,
+            normal_map,
+            render_alpha.permute(1,2,0),
+            refl_strength=refl_strength.permute(1,2,0),
+            roughness=roughness.permute(1,2,0), pc=pc,
+            surf_depth=surf_depth,
+            indirect_light=indirect_light.permute(1,2,0))
     else:
-        specular, extra_dict = get_specular_color_surfel(pc.get_envmap, albedo.permute(1,2,0), viewpoint_camera.HWK, viewpoint_camera.R, viewpoint_camera.T, normal_map, render_alpha.permute(1,2,0), refl_strength=refl_strength.permute(1,2,0), roughness=roughness.permute(1,2,0), pc=pc, surf_depth=surf_depth)
+        specular, extra_dict = get_specular_color_surfel(
+            pc.get_envmap,
+            albedo.permute(1,2,0),
+            viewpoint_camera.HWK,
+            viewpoint_camera.R,
+            viewpoint_camera.T,
+            normal_map,
+            render_alpha.permute(1,2,0),
+            refl_strength=refl_strength.permute(1,2,0),
+            roughness=roughness.permute(1,2,0),
+            pc=pc,
+            surf_depth=surf_depth)
 
     # Integrate the final image
     final_image = (1-refl_strength) * base_color + specular 

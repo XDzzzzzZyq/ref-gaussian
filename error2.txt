@@ -1,0 +1,32 @@
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,13): error C2760: è¯\xadæ³•é”™è¯\xaf: æ­¤å\xa4„å‡ºç°æ„å¤–çš„â€\x9c<â€ï¼›åº”ä¸ºâ€œè¡¨è¾¾å¼â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,13): error C3878: è¯\xadæ³•é”™è¯\xaf:â€œexpressionâ€åå‡ºç°æ„å\xa4–æ ‡è®°â\x80\x9c<â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,40): error C2760: è¯\xadæ³•é”™è¯\xaf: æ­¤å\xa4„å‡ºç°æ„å¤–çš„â€\x9c)â€ï¼›åº”ä¸ºâ€\x9c;â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,40): error C3878: è¯\xadæ³•é”™è¯\xaf:â€œexpression-statementâ€åå‡ºç°æ„å\xa4–æ ‡è®°â\x80\x9c)â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,81): error C2760: è¯\xadæ³•é”™è¯\xaf: æ­¤å\xa4„å‡ºç°æ„å¤–çš„â€\x9c>â€ï¼›åº”ä¸ºâ€œè¡¨è¾¾å¼â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,81): error C3878: è¯\xadæ³•é”™è¯\xaf:â€œexpressionâ€åå‡ºç°æ„å\xa4–æ ‡è®°â\x80\x9c>â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,92): error C2760: è¯\xadæ³•é”™è¯\xaf: æ­¤å\xa4„å‡ºç°æ„å¤–çš„â€\x9c)â€ï¼›åº”ä¸ºâ€\x9c;â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,92): error C3878: è¯\xadæ³•é”™è¯\xaf:â€œexpression-statementâ€åå‡ºç°æ„å\xa4–æ ‡è®°â\x80\x9c)â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,109): error C2760: è¯\xadæ³•é”™è¯\xaf: æ­¤å\xa4„å‡ºç°æ„å¤–çš„â€\x9c...â€ï¼›åº”ä¸ºâ€\x9c;â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\common.h(46,109): error C3878: è¯\xadæ³•é”™è¯\xaf:â€œexpression-statementâ€åå‡ºç°æ„å\xa4–æ ‡è®°â\x80\x9c...â€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)
+
+      D:\MachineLearning\gaussian_splating\ref-gaussian\submodules\raytracing\include\raytracing\bounding_box.cuh(13,13): warning C4068: æœ\xaaçŸ¥çš„æ‚æ³¨â€œunrollâ€\x9d [C:\Users\XDzZyq\AppData\Local\Temp\tmps_r3b6mm\build\_raytracing.vcxproj]
+        (ç¼–è¯‘æºæ–‡ä»¶â\x80œD:/MachineLearning/gaussian_splating/ref-gaussian/submodules/raytracing/src/bindings.cppâ€\x9d)

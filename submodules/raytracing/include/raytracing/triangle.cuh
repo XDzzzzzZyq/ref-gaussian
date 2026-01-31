@@ -29,10 +29,6 @@ struct Triangle {
         Eigen::Vector3f v2v0 = c - a;
         Eigen::Vector3f rov0 = ro - a;
         n = v1v0.cross( v2v0 );
-        if (rd.dot(n) >= 0) {
-            return 1e6f;
-        }
-
         Eigen::Vector3f q = rov0.cross( rd );
         float d = 1.0f/rd.dot( n );
         float u = d*-q.dot( v2v0 );
