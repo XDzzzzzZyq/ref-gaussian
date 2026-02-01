@@ -6,3 +6,6 @@ build/
 *.ply
 .venv/
 dist/
+
+eigen-*/
+*eigem.*

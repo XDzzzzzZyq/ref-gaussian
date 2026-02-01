@@ -14,7 +14,4 @@ eval
 **/tmp
 snapshot_bw.dump
 train_sh
-
 *.egg-info/
-
-

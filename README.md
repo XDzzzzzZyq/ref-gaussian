@@ -30,7 +30,7 @@ conda create -n ref-gaussian python=3.9
 conda activate ref-gaussian
 
 # install pytorch (e.g. cuda 12.6)
-pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip3 install torch==2.7.1+cu126 torchvision --index-url https://download.pytorch.org/whl/cu126
 # install submodules
 pip install submodules/cubemapencoder --no-build-isolation
 pip install submodules/diff-surfel-rasterization --no-build-isolation
