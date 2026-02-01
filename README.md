@@ -26,16 +26,16 @@ https://github.com/user-attachments/assets/99a9b449-f7b0-4db0-8f97-2ce5a5f5639d
 git clone https://github.com/fudan-zvg/ref-gaussian.git --recursive
 cd ref-gaussian
 # create conda environment
-conda create -n ref-gaussian python=3.8
+conda create -n ref-gaussian python=3.9
 conda activate ref-gaussian
 
-# install pytorch (e.g. cuda 11.7)
-pip install torch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0
+# install pytorch (e.g. cuda 12.6)
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 # install submodules
-pip install submodules/cubemapencoder
-pip install submodules/diff-surfel-rasterization
-pip install submodules/simple-knn
-pip install submodules/raytracing
+pip install submodules/cubemapencoder --no-build-isolation
+pip install submodules/diff-surfel-rasterization --no-build-isolation
+pip install submodules/simple-knn --no-build-isolation
+pip install submodules/raytracing --no-build-isolation
 
 # install other denpendencies
 pip install -r requirements.txt
