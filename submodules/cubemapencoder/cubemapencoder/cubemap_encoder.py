@@ -3,7 +3,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 #import better_cubemap
-from torch.cuda.amp import custom_bwd, custom_fwd
+from torch.amp import custom_bwd, custom_fwd
 
 try:
     import _cubemapencoder as _backend
@@ -17,7 +17,7 @@ _interp_to_id = {
 
 class _cubemap_encode(torch.autograd.Function):
     @staticmethod
-    @custom_fwd(cast_inputs=torch.float32)
+    @custom_fwd(cast_inputs=torch.float32, device_type='cuda')
     #@custom_fwd
     def forward(ctx, inputs, embeddings, fail_value, interpolation, enable_seamless):
 
@@ -40,7 +40,7 @@ class _cubemap_encode(torch.autograd.Function):
         return outputs
 
     @staticmethod
-    @custom_bwd
+    @custom_bwd(device_type='cuda')
     def backward(ctx, grad_outputs):
         inputs, embeddings, params = ctx.saved_variables
         grad_outputs = grad_outputs.contiguous()
